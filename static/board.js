@@ -209,13 +209,11 @@ var cards = [
     }
 ];
 var deck = [];
-var stack;
-var card;
-var stacks = [];
 var deckElement = document.getElementById("deck");
-var stacksElement = document.getElementById("stacks");
-var pileElement = document.getElementById("pile");
+var card;
 var cardElement;
+var stack;
+var pileElement = document.getElementById("pile");
 
 var Card = function(number, suit){
     this.number = number;
