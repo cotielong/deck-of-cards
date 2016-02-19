@@ -36,10 +36,6 @@ body {
   z-index: 0;
   border: 1px dashed #333; }
 
-/*
-#cards {
-  display:none;
-}*/
 /**
   DECK
 */
@@ -88,14 +84,108 @@ body {
     position: absolute;
     left: 0;
     top: 0; }
-  #pile .card:nth-last-child(3) {
-    z-index: 1000; }
   #pile .card:nth-last-child(2) {
-    left: 1em;
-    z-index: 1100; }
-  #pile .card:nth-last-child(1) {
-    left: 2em;
-    z-index: 1200; }
+    left: 1em;}
+  #pile .card:nth-last-child(3) {
+    left: 2em;}  
+  #pile .card:nth-last-child(4) {
+    left: 3em;}
+  #pile .card:nth-last-child(5) {
+    left: 4em;}  
+  #pile .card:nth-last-child(6) {
+    left: 5em;}
+  #pile .card:nth-last-child(7) {
+    left: 6em;}
+  #pile .card:nth-last-child(8) {
+    left: 7em;}
+  #pile .card:nth-last-child(9) {
+    left: 8em;}
+  #pile .card:nth-last-child(10) {
+    left: 9em;}
+  #pile .card:nth-last-child(11) {
+    left: 10em;}
+  #pile .card:nth-last-child(12) {
+    left: 11em;}
+  #pile .card:nth-last-child(13) {
+    left: 12em;}
+  #pile .card:nth-last-child(14) {
+    left: 13em;}
+  #pile .card:nth-last-child(15) {
+    left: 14em;}
+  #pile .card:nth-last-child(16) {
+    left: 15em;}  
+  #pile .card:nth-last-child(17) {
+    left: 16em;}
+  #pile .card:nth-last-child(18) {
+    left: 17em;}  
+  #pile .card:nth-last-child(19) {
+    left: 18em;}
+  #pile .card:nth-last-child(20) {
+    left: 19em;}
+  #pile .card:nth-last-child(21) {
+    left: 20em;}
+  #pile .card:nth-last-child(22) {
+    left: 21em;}
+  #pile .card:nth-last-child(23) {
+    left: 22em;}
+  #pile .card:nth-last-child(24) {
+    left: 23em;}
+  #pile .card:nth-last-child(25) {
+    left: 24em;}
+  #pile .card:nth-last-child(26) {
+    left: 25em;}
+  #pile .card:nth-last-child(27) {
+    left: 26em;}
+  #pile .card:nth-last-child(28) {
+    left: 27em;}
+  #pile .card:nth-last-child(29) {
+    left: 28em;}  
+  #pile .card:nth-last-child(30) {
+    left: 29em;}
+  #pile .card:nth-last-child(31) {
+    left: 30em;}  
+   #pile .card:nth-last-child(32) {
+    left: 31em;}
+  #pile .card:nth-last-child(33) {
+    left: 32em;}
+  #pile .card:nth-last-child(34) {
+    left: 33em;}
+  #pile .card:nth-last-child(35) {
+    left: 34em;}
+  #pile .card:nth-last-child(36) {
+    left: 35em;}
+  #pile .card:nth-last-child(37) {
+    left: 36em;}
+  #pile .card:nth-last-child(38) {
+    left: 37em;}
+  #pile .card:nth-last-child(39) {
+    left: 38em;}
+  #pile .card:nth-last-child(40) {
+    left: 39em;}
+  #pile .card:nth-last-child(41) {
+    left: 40em;}
+  #pile .card:nth-last-child(42) {
+    left: 41em;}  
+  #pile .card:nth-last-child(43) {
+    left: 42em;}
+  #pile .card:nth-last-child(44) {
+    left: 43em;}  
+  #pile .card:nth-last-child(45) {
+    left: 44em;}
+  #pile .card:nth-last-child(46) {
+    left: 45em;}
+  #pile .card:nth-last-child(47) {
+    left: 46em;}
+  #pile .card:nth-last-child(48) {
+    left: 47em;}
+  #pile .card:nth-last-child(49) {
+    left: 48em;}
+  #pile .card:nth-last-child(50) {
+    left: 49em;}
+  #pile .card:nth-last-child(51) {
+    left: 50em;}
+  #pile .card:nth-last-child(52) {
+    left: 51em;}
 
 .stack {
   float: left;
@@ -117,15 +207,7 @@ body {
   display: inline-block;
   margin: 0 0.25em 0.25em 0;
   perspective: 10em;
-  /*
-   * Card Flipping
-   * http://davidwalsh.name/css-flip
-   */
-  /* flip the pane when .flip class is added */
-  /* flip speed goes here */
-  /* hide back of pane during swap */
-  /* front pane, placed above back */
-  /* back, initially hidden pane */ }
+}
   .card .front {
     background-color: #fff; }
   .card .front,
@@ -153,7 +235,6 @@ body {
   .card.flipped .back,
   .card .front {
     z-index: 2;
-    /* for firefox 31 */
     transform: rotateY(0deg); }
   .card.flipped .front,
   .card .back {
@@ -203,9 +284,6 @@ body {
     position: relative;
     top: 0.25em; }
   .card.number-7 .center .center .row.bottom,
-  .card.number-8 .center .center .row.bottom {
-    position: relative;
-    top: -0.25em; }
 
 .foundation .card,
 .stack .card {
@@ -214,78 +292,3 @@ body {
 .stack .card.flipped {
   cursor: default; }
 
-/*
- * First child is empty card slot.
- * Second child should sit directly on top of empty card slot.
- * All children after that should cascade.
-*/
-.stack .card:nth-child(3) {
-  top: 1em; }
-
-.stack .card:nth-child(4) {
-  top: 2em; }
-
-.stack .card:nth-child(5) {
-  top: 3em; }
-
-.stack .card:nth-child(6) {
-  top: 4em; }
-
-.stack .card:nth-child(7) {
-  top: 5em; }
-
-.stack .card:nth-child(8) {
-  top: 6em; }
-
-.stack .card:nth-child(9) {
-  top: 7em; }
-
-.stack .card:nth-child(10) {
-  top: 8em; }
-
-/*
-.stack .card:nth-child(3) {
-  top:1.75em;
-}
-
-.stack .card:nth-child(4) {
-  top:3.5em;
-}
-
-.stack .card:nth-child(5) {
-  top:5.25em;
-}
-
-.stack .card:nth-child(6) {
-  top:7em;
-}
-
-.stack .card:nth-child(7) {
-  top:8.75em;
-}
-
-.stack .card:nth-child(8) {
-  top:10.5em;
-}
-
-.stack .card:nth-child(9) {
-  top:12.25em;
-}
-
-.stack .card:nth-child(10) {
-  top:14em;
-}
-
-.stack .card:nth-child(11) {
-  top:15.75em;
-}
-*/
-.move-to-stack-7 {
-  animation: moveToStack7 0.25s ease 1;
-  animation-fill-mode: forwards; }
-
-@keyframes moveToStack7 {
-  from {
-    transform: translate(0); }
-  to {
-    transform: translate(45em, 9em); } }

@@ -215,7 +215,6 @@ var stacks = [];
 var deckElement = document.getElementById("deck");
 var stacksElement = document.getElementById("stacks");
 var pileElement = document.getElementById("pile");
-//var cardsElement = document.getElementById("cards");
 var cardElement;
 
 var Card = function(number, suit){
