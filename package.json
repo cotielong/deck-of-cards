@@ -1,15 +1,28 @@
 {
-  "name": "magician's assistant",
+  "name": "deck-of-card",
   "version": "1.0.0",
-  "description": "Magician's card drawing game.",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Cotie Long",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cotielong/deck-of-cards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cotielong/deck-of-cards/issues"
+  },
+  "homepage": "https://github.com/cotielong/deck-of-cards#readme",
   "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.3"
+    "ejs": "^2.4.1",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0"
   }
 }
