@@ -1,31 +1,29 @@
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Magician's Assistant</title>
     <link href="stylesheets/magician.css" rel="stylesheet">
+    <script src="views/jquery-2.1.3.min.js"></script>
 </head>
-
 <body>
     <div id="game">
         <div id="board">
             <div id="controls">
-                <button class="button">Sort cards</button>
-                <input type="button" class="button" value="Shuffle Deck" onClick="window.location.reload()">
+                <p>Click the deck to draw a card.</p>
+                <input type="button" class="button" value="Sort cards" onclick="sort()">
+                <input type="button" class="button" value="Shuffle Deck" onclick="window.location.reload()">
             </div>
             <div class="row clear">
                 <div id="deck" class="card-holder">
                     <div class="empty-card-slot"></div>
                 </div>
                 <div id="pile" class="card-holder">
-                    <div class="empty-card-slot"></div>
-                    <span class="instructions">Click the deck to draw a card.</span>
                 </div>
             </div>
         </div>
     </div>
         <div id="cards">
-            <div id="card-2-hearts" class="card hearts number-2">
+            <div id="card-2-hearts" class="card hearts number-2" data-sort="2">
               <div class="flipper">
                 <div class="front">
                   <div class="card-block upper-left">
@@ -93,7 +91,7 @@
               <!-- .flipper -->
             </div>
             <!-- .card -->
-            <div id="card-3-hearts" class="card hearts number-3">
+            <div id="card-3-hearts" class="card hearts number-3" data-sort="3">
               <div class="flipper">
                 <div class="front">
                   <div class="card-block upper-left">
@@ -161,7 +159,7 @@
               <!-- .flipper -->
             </div>
             <!-- .card -->
-            <div id="card-4-hearts" class="card hearts number-4">
+            <div id="card-4-hearts" class="card hearts number-4" data-sort="4">
               <div class="flipper">
                 <div class="front">
                   <div class="card-block upper-left">
@@ -229,7 +227,7 @@
               <!-- .flipper -->
             </div>
             <!-- .card -->
-            <div id="card-5-hearts" class="card hearts number-5">
+            <div id="card-5-hearts" class="card hearts number-5" data-sort="3">
               <div class="flipper">
                 <div class="front">
                   <div class="card-block upper-left">
@@ -3562,7 +3560,7 @@
             </div>
             <!-- .card -->
         </div>
-        <script src="views/jquery-2.1.3.min.js"></script>
+        <script src="views/cards.js"></script>
         <script src="views/utils.js"></script>
         <script src="views/board.js"></script>
         <script src="views/game.js"></script>

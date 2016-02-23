@@ -46,7 +46,7 @@ $("#deck").on("click", function(){
         // Once animated transition is done, move this to the #pile DOM element
         // This requires the transition CSS properties to match up with the final CSS properties on the new position
         card.bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-            $(this).appendTo(pileElement);    
+            $(this).appendTo(pileElement);
         });
     }
 });
