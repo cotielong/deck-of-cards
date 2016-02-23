@@ -1,14 +1,15 @@
-var gulp = require("gulp");
-var sass = require("gulp-sass");
+var gulp   = require('gulp');
+var jshint = require('gulp-jshint');
+var stylish = require('jshint-stylish');
+var build = require('gulp-build');
 
-gulp.task("sass", function () {
-    gulp.src("./sass/**/*.scss")
-        .pipe(sass.sync().on("error", sass.logError))
-        .pipe(gulp.dest("./css"));
+gulp.task('default', function () {
+    gulp.src(['views/*.js'])
+        .pipe(jshint.reporter('jshint-stylish'));
 });
-
-gulp.task("sass:watch", function () {
-    gulp.watch("./sass/**/*.scss", ["sass"]);
+ 
+gulp.task('build', function() {
+  gulp.src('views/*.js')
+      .pipe(build({ GA_ID: '123456' }))
+      .pipe(gulp.dest('dist'))
 });
-
-gulp.task("default", ["sass"]);

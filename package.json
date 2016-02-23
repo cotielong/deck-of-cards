@@ -1,10 +1,9 @@
 {
   "name": "deck-of-card",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -17,12 +16,15 @@
   },
   "homepage": "https://github.com/cotielong/deck-of-cards#readme",
   "dependencies": {
-    "ejs": "^2.4.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "gulp-install": "^0.6.0"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-sass": "^1.1.0"
+    "gulp": "^3.9.1",
+    "gulp-build": "^0.5.3",
+    "gulp-jshint": "^2.0.0",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "mocha": "^2.4.5"
   }
 }
