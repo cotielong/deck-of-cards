@@ -6,6 +6,12 @@
    ```sh
    npm install -g gulp
    ```
+      ```sh
+   npm install -g express
+   ```
+    ```sh
+   npm install -g mocha
+   ```
 
 2. Install all the required dependencies
    ```sh
@@ -18,7 +24,13 @@
     node app.js
     ```
 
-34. Run lint & build
+4. Build & test
     ```sh
     gulp 
     ```
+    >This will run the build.
+    
+    ```sh
+    mocha
+    ```
+    >This will run the unit tests.

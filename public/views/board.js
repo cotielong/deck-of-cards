@@ -254,7 +254,31 @@ for(var c in deck){
     deckElement.appendChild(cardElement);    
 }
 
-// Sort the "deck"
+// Get cards from deck
+var drawNumber = 1;
+
+$("#deck").on("click", function(){
+    if (deck.length < 1) {
+        return;
+    }
+    var cards = deck.splice(-drawNumber, drawNumber);
+    var card;
+    var cardElements = [];
+    
+    for(var i = 0; i < cards.length; i++){
+        
+        card = $("#" + cards[i].getElementId());
+        card.addClass("flip");
+        
+        // Once animated transition is done, move this to the #pile DOM element
+        // This requires the transition CSS properties to match up with the final CSS properties on the new position
+        card.bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
+            $(this).appendTo(pileElement);
+        });
+    }
+});
+
+// Sort the deck
 var cardnames = [];
 var suits = ['clubs', 'spades', 'hearts', 'diams'];
 var ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
