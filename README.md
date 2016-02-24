@@ -1,8 +1,9 @@
 # Magician's Assistant
+This project  is intended to simulate card tricks for a magician. The cards are even styled with CSS. It's that fun? Enjoy!
 
 ## Getting Started
 
-1. Install gulp locally
+1. Install gulp, express, & mocha locally
    ```sh
    npm install -g gulp
    ```
