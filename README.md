@@ -1,5 +1,6 @@
 # Magician's Assistant
-This project  is intended to simulate card tricks for a magician. The cards are even styled with CSS. It's that fun? Enjoy!
+This project is intended to simulate a deck of cards that allows a magician to perform
+magic tricks. :zap: The cards are even styled with CSS. It's that fun? Enjoy!
 
 ## Getting Started
 
