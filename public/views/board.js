@@ -1,3 +1,4 @@
+/*global document, shuffle, sort, $*/
 var cards = [
     {
         "number": "A",
@@ -213,7 +214,6 @@ var deck = [];
 var deckElement = document.getElementById("deck");
 var card;
 var cardElement;
-var stack;
 var pileElement = document.getElementById("pile");
 
 var Card = function(number, suit){
@@ -230,11 +230,11 @@ var Card = function(number, suit){
     
     this.getElementId = function(){
         return "card-" + this.number + "-" + this.suit;
-    }
+    };
     
     this.toString = function(){
         return this.number + " of " + this.suit;
-    }
+    };
 };
 
 // Create the cards
@@ -263,7 +263,6 @@ $("#deck").on("click", function(){
     }
     var cards = deck.splice(-drawNumber, drawNumber);
     var card;
-    var cardElements = [];
     
     for(var i = 0; i < cards.length; i++){
         
@@ -295,4 +294,4 @@ var pile = document.getElementById( 'pile' );
 }).forEach( function ( elem ) {
     pile.appendChild( elem );
 });
-};
+}

@@ -23,6 +23,10 @@
     ```sh
     node app.js
     ```
+    ```sh
+    http://localhost:3000/
+    ```
+    >Visit port 3000 to find the project.
 
 4. Build & test
     ```sh
