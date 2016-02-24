@@ -28,7 +28,6 @@ magic tricks. :zap: :tophat: :rabbit: The cards are even styled with CSS. Isn't 
     ```sh
     http://localhost:3000/
     ```
-    >Visit port 3000 to find the project.
 
 4. Build & test
     ```sh
