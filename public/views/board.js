@@ -237,6 +237,7 @@ var Card = function(number, suit){
     };
 };
 
+
 // Create the cards
 for(var i=0; i < cards.length; i++){
     card = new Card(cards[i].number, cards[i].suit);

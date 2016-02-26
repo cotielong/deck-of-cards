@@ -1,10 +1,10 @@
-# Magician's Assistant
+# Magician's Assistant :zap:
 This project is intended to simulate a deck of cards that allows a magician to perform
-magic tricks. :zap: :tophat: :rabbit: The cards are even styled with CSS. Isn't that fun? Enjoy!
+magic tricks. :tophat: :rabbit: The cards are even styled with CSS. Isn't that fun? Enjoy!
 
 ## Getting Started
 
-1. Install gulp, express, & mocha locally
+1. Install gulp, express, & jasmine locally
    ```sh
    npm install -g gulp
    ```
@@ -12,7 +12,7 @@ magic tricks. :zap: :tophat: :rabbit: The cards are even styled with CSS. Isn't 
    npm install -g express
    ```
     ```sh
-   npm install -g mocha
+   npm install jasmine-node -g
    ```
 
 2. Install all the required dependencies
@@ -36,6 +36,6 @@ magic tricks. :zap: :tophat: :rabbit: The cards are even styled with CSS. Isn't 
     >This will run the build.
     
     ```sh
-    mocha
+    /SpecRunner.html
     ```
-    >This will run the unit tests.
+    >Visit Spec Runner in your browser to run the Jasmine unit tests.

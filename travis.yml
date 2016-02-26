@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "0.12"
+install: npm install
+before_script:
+  - npm install -g gulp
+  - npm install -g express
+  - npm install jasmine-node -g
+script: gulp
