@@ -6,13 +6,7 @@ magic tricks. :tophat: :rabbit: The cards are even styled with CSS. Isn't that f
 
 1. Install gulp, express, & jasmine locally
    ```sh
-   npm install -g gulp
-   ```
-      ```sh
-   npm install -g express
-   ```
-    ```sh
-   npm install jasmine-node -g
+   npm install
    ```
 
 2. Install all the required dependencies
