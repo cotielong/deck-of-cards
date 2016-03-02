@@ -4,18 +4,13 @@ magic tricks. :tophat: :rabbit: The cards are even styled with CSS. Isn't that f
 
 ## Getting Started
 
-1. Install gulp, express, & jasmine locally
-   ```sh
-   npm install
-   ```
-
-2. Install all the required dependencies
+1. Install all the required dependencies
    ```sh
    npm install
    ```
    >It should take a few minutes to install.
 
-3. Run locally
+2. Run locally
     ```sh
     node app.js
     ```
@@ -23,7 +18,7 @@ magic tricks. :tophat: :rabbit: The cards are even styled with CSS. Isn't that f
     http://localhost:3000/
     ```
 
-4. Build & test
+3. Build & test
     ```sh
     gulp 
     ```
